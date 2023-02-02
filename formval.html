@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> 
+
+    <script>
+        function validateReqFields(thisform)
+        {
+            var username= thisform.uname.value;
+            var password= thidform.pw.value;
+            var number= thisform.nb.value;
+            console.log(username,password)
+            if(username==null || username =="")
+            {
+              alert("please enter a valid username")
+            }
+            if(password==null || password=="")
+            {
+              alert("please enter a valid password")
+            }
+            if(number==null || number=="")
+            {
+              alert("please enter a valid number")
+            }
+            return false;
+        }
+
+    </script>
+</title>
+</head>
+<body> 
+<form  onsubmit="return validateReqFields(this)">
+    Username: <input type="text" name="uname" placeholder="enter username" ><br><br>
+    Password: <input type="password" name="pw"placeholder="enter password"><br><br>
+    Mobile number: <input type="number" name="nb" placeholder="enter mobile number"><br><br>
+    <input type="submit" value="submit">
+</form>
+</body>
+
+</html>
